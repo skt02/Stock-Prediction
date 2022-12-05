@@ -234,17 +234,17 @@ def lstm(ticker):
     plt.show()
 
 
-# df = getMovingAverage('MMM')
-# df_ohlc = resample_data(df)
+df = getMovingAverage('MMM')
+df_ohlc = resample_data(df)
 # print(df_ohlc)
-# plt_ohlc(df_ohlc)
-# correlation_table()
-# plotMovingAverage(df)
-# df.drop(df.columns[len(df.columns)-1], axis = 1, inplace=True)
-# company_df = web.DataReader('TSLA', 'yahoo', start, end)
+plt_ohlc(df_ohlc)
+correlation_table()
+plotMovingAverage(df)
+df.drop(df.columns[len(df.columns)-1], axis = 1, inplace=True)
+company_df = web.DataReader('TSLA', 'yahoo', start, end)
 # print(company_df.head())
 # print(df.columns)
-# do_ml('MMM')
+do_ml('MMM')
 lstm('MMM')
 
 main.py9 KB
